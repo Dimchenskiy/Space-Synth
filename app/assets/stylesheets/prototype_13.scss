@@ -1,0 +1,197 @@
+.prototype_body_13 {
+  background: var(--medium-grey);
+}
+
+#prototype_13 {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // height: 100%;
+  // margin: auto;
+
+  .Container {
+    .SC_Button {
+      width: 300px;
+      height: 300px;
+      // margin: auto;
+      margin-bottom: 20px;
+      color: #8a37a7;
+      background: white;
+      font-family: Helvetica;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 200px;
+      font-size: 25px;
+      line-height: 300px;
+      letter-spacing: -1px;
+    }
+
+    .SC_ToggleButton {
+      padding: 8px 25px;
+      font-size: 14px;
+      border-radius: 40px;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: Helvetica;
+      font-weight: bold;
+      background-color: var(--white);
+      color: var(--black);
+      cursor: pointer;
+
+      &:hover:not(.active) {
+        background-color: var(--light-grey);
+      }
+
+      &.active {
+        font-weight: 800;
+        color: var(--black);
+        background-color: #f09ac3;
+        cursor: default;
+      }
+    }
+
+    .Start_Button {
+      position: absolute;
+      left: 1100px;
+      top: 40px;
+    }
+    .First_text {
+      position: absolute;
+      width: 1200px;
+      left: 30px;
+      top: 40px;
+      font-family: Helvetica;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      font-size: 180px;
+      color: white;
+      line-height: 153px;
+      letter-spacing: -10px;
+    }
+    .Second_text {
+      position: absolute;
+      width: 440px;
+      left: 30px;
+      top: 420px;
+      font-family: Helvetica;
+      font-weight: medium;
+      text-align: left;
+      font-size: 50px;
+      color: white;
+      line-height: 50px;
+      letter-spacing: -1px;
+    }
+    .Third_text {
+      position: absolute;
+      width: 440px;
+      left: 500px;
+      top: 420px;
+      font-family: Helvetica;
+      font-weight: medium;
+      text-align: left;
+      font-size: 50px;
+      color: white;
+      line-height: 50px;
+      letter-spacing: -1px;
+    }
+    .Four_text {
+      position: absolute;
+      width: 440px;
+      left: 970px;
+      top: 420px;
+      font-family: Helvetica;
+      font-weight: medium;
+      text-align: left;
+      font-size: 50px;
+      color: white;
+      line-height: 50px;
+      letter-spacing: -1px;
+    }
+    .Melody_Settings {
+      position: absolute;
+      left: 30px;
+      top: 500px;
+      width: 440px;
+    }
+    .Bass_Settings {
+      position: absolute;
+      left: 500px;
+      top: 500px;
+      width: 440px;
+    }
+    .Drums_Settings {
+      position: absolute;
+      left: 970px;
+      top: 455px;
+      width: 440px;
+    }
+    .Toggle_Button_Set {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: Helvetica;
+      font-weight: bold;
+    }
+    .Background {
+      position: fixed;
+      left: 0px;
+      top: -20px;
+      width: 100%;
+      height: 1200px;
+      background: url(Planet2.jpg);
+      background-size: 100%;
+      z-index: -5;
+    }
+
+    .SC_Slider {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: Helvetica;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      input[type='range'] {
+        -webkit-appearance: none;
+        width: 100%;
+
+        &::-webkit-slider-runnable-track {
+          height: 8px;
+          background: var(--white);
+          border: none;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          border: none;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background: url(слайдер1.png);
+          background-size: 100%;
+          margin-top: -16px;
+          cursor: pointer;
+        }
+
+        &:focus {
+          outline: none;
+
+          &::-webkit-slider-runnable-track {
+            background: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
