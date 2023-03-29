@@ -10,19 +10,43 @@ import {
   getStoreEnthropy,
   setStoreEnthropy,
   getStoreEffect,
-  setStoreEffect
+  setStoreEffect,
+  getBackgroundColorRed,
+  setBackgroundColorRed,
+  getBackgroundColorGreen,
+  setBackgroundColorGreen,
+  getBackgroundColorBlue,
+  setBackgroundColorBlue,
+  getFlowerColorRed,
+  setFlowerColorRed,
+  getFlowerColorGreen,
+  setFlowerColorGreen,
+  getFlowerColorBlue,
+  setFlowerColorBlue
 } from '../prototypes/prototype_27/store'
 
 const props = {
   shift: getStoreShift(),
   enthropy: getStoreEnthropy(),
-  effect: getStoreEffect()
+  effect: getStoreEffect(),
+  backColorRed: getBackgroundColorRed(),
+  backColorGreen: getBackgroundColorGreen(),
+  backColorBlue: getBackgroundColorBlue(),
+  flowerColorRed: getFlowerColorRed(),
+  flowerColorGreen: getFlowerColorGreen(),
+  flowerColorBlue: getFlowerColorBlue()
 }
 
 const actions = {
   setStoreShift,
   setStoreEnthropy,
-  setStoreEffect
+  setStoreEffect,
+  setBackgroundColorRed,
+  setBackgroundColorGreen,
+  setBackgroundColorBlue,
+  setFlowerColorRed,
+  setFlowerColorGreen,
+  setFlowerColorBlue
 }
 
 document.addEventListener('DOMContentLoaded', () => {
