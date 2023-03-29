@@ -133,7 +133,17 @@ export default class Container extends Component {
     return (
       <div className="Container">
         <div className="sketch" id="sketch"></div>
-
+        <div className="StartScreen">
+          <div className="Starttext1">Генеративный букет</div>
+          <div className="Starttext2">
+            Создай собственную открытку с цветком, чтобы порадовать близких с
+            яркой весной!
+          </div>
+          <div className="Starttext3">Начать</div>
+          <div className="image1"></div>
+          <div className="image2"></div>
+          <div className="image3"></div>
+        </div>
         <div className="interface">
           <div className="text1">Фон</div>
           <div className="text2">Цветок</div>
